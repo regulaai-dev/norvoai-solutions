@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.transparent {
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: var(--colors-white);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.navbar.scrolled .navbar__brand,
+.navbar.scrolled .navbar__center a,
+.navbar.scrolled .navbar__right a {
+  color: var(--colors-blue);
+}
+
+.navbar.scrolled .navbar__cta svg {
+  stroke: var(--colors-blue);
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.navbar__logo {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar__brand {
+  font-family: var(--font-gta-mono);
+  font-size: 0.38rem;
+  letter-spacing: 0.04em;
+  color: var(--colors-white);
+  text-transform: none;
+}
+
+.navbar__center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__center a {
+  font-family: var(--font-gta-mono);
+  font-size: 0.36rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--colors-white);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.navbar__center a:hover {
+  opacity: 1;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 1;
+}
+
+.navbar__right a {
+  font-family: var(--font-gta-mono);
+  font-size: 0.36rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--colors-white);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.navbar__right a:hover {
+  opacity: 1;
+}
+
+.navbar__cta {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 0;
+}
+
+.navbar__cta svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--colors-white);
+}

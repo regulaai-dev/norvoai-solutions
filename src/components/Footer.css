@@ -1,0 +1,124 @@
+.footer {
+  position: relative;
+  color: var(--colors-white);
+  overflow: hidden;
+}
+
+.footer__shader {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer__shader-fallback {
+  position: absolute;
+  inset: 0;
+  background: var(--colors-blue);
+}
+
+.footer__content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1rem 1.5rem;
+}
+
+.footer__inner {
+  margin-bottom: 2.5rem;
+}
+
+/* Nav columns */
+.footer__nav {
+  display: flex;
+}
+
+.footer__nav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__nav-col--row {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer__nav-phones {
+  font-family: var(--font-gta-mono);
+  font-size: 0.38rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--colors-white);
+  opacity: 0.8;
+}
+
+.footer__nav-col a {
+  font-family: var(--font-gta-mono);
+  font-size: 0.38rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--colors-white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.footer__nav-col a:hover {
+  opacity: 1;
+}
+
+/* Social row */
+.footer__social-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__social a {
+  font-family: var(--font-gta-mono);
+  font-size: 0.36rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--colors-white);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.footer__social a:hover {
+  opacity: 1;
+}
+
+/* Bottom bar */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer__copyright,
+.footer__credit {
+  font-family: var(--font-gta-mono);
+  font-size: 0.33rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--colors-white);
+  opacity: 0.5;
+}
+
+@media (max-width: 639px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
