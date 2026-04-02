@@ -195,6 +195,10 @@
     padding: 2.5rem 1rem 3rem;
   }
 
+  .s4__label {
+    font-size: 0.55rem;
+  }
+
   .s4__heading {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -205,13 +209,35 @@
     gap: 2rem;
   }
 
+  .s4__sub {
+    font-size: 0.55rem;
+  }
+
+  .s4__field-label {
+    font-size: 0.52rem;
+  }
+
+  .s4__input {
+    font-size: 0.62rem;
+  }
+
+  .s4__error {
+    font-size: 0.52rem;
+  }
+
   .s4__glass-btn {
     width: 100%;
     justify-content: center;
   }
 
   .s4__glass-btn-content {
+    font-size: 0.6rem;
     justify-content: center;
     width: 100%;
+    padding: 0.65rem 1.4rem;
+  }
+
+  .s4__confirm-text {
+    font-size: 0.55rem;
   }
 }

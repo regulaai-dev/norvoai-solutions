@@ -135,11 +135,16 @@
 
 @media (max-width: 639px) {
   .hero__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     max-width: 90%;
   }
 
   .hero__content {
     padding: 2rem 1.2rem;
+  }
+
+  .hero__glass-btn-content {
+    font-size: 0.6rem;
+    padding: 0.65rem 1.4rem;
   }
 }

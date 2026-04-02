@@ -205,6 +205,19 @@
 
 /* Mobile breakpoint */
 @media (max-width: 639px) {
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar__brand {
+    font-size: 0.52rem;
+  }
+
+  .navbar__logo {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
   .navbar__center {
     display: none;
   }

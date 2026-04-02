@@ -36,7 +36,7 @@
 
 @media (max-width: 639px) {
   .about {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   .about__body-wrap {
@@ -49,6 +49,10 @@
   }
 
   .about__body {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .about__col p {
+    font-size: 0.55rem;
   }
 }

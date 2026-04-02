@@ -84,11 +84,24 @@
   }
 
   .services__main-heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 0.04em;
   }
 
+  .services__item-header {
+    padding: 0.8rem 0;
+  }
+
+  .services__item-title {
+    font-size: 0.85rem;
+  }
+
+  .services__item-icon {
+    font-size: 0.9rem;
+  }
+
   .services__item-body p {
+    font-size: 0.55rem;
     max-width: 100%;
   }
 }
