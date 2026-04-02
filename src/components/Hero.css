@@ -138,4 +138,8 @@
     font-size: 2rem;
     max-width: 90%;
   }
+
+  .hero__content {
+    padding: 2rem 1.2rem;
+  }
 }

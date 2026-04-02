@@ -79,7 +79,16 @@
 }
 
 @media (max-width: 639px) {
+  .services {
+    padding: 2.5rem 1rem 3rem;
+  }
+
   .services__main-heading {
     font-size: 1.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  .services__item-body p {
+    max-width: 100%;
   }
 }

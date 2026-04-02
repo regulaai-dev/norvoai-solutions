@@ -30,6 +30,10 @@
   stroke: var(--colors-blue);
 }
 
+.navbar.scrolled .navbar__hamburger span {
+  background: var(--colors-blue);
+}
+
 .navbar__left {
   display: flex;
   align-items: center;
@@ -121,4 +125,103 @@
   width: 100%;
   height: 100%;
   stroke: var(--colors-white);
+}
+
+/* Hamburger — hidden on desktop */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+}
+
+.navbar__hamburger span {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--colors-white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar__hamburger.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.navbar__hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.navbar__hamburger.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* Mobile full-screen menu */
+.navbar__mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--colors-blue);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.navbar__mobile-menu.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.navbar__mobile-menu a {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--colors-white);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.navbar__mobile-menu a:hover {
+  opacity: 1;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 639px) {
+  .navbar__center {
+    display: none;
+  }
+
+  .navbar__contact-link {
+    display: none;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar__mobile-menu {
+    display: flex;
+  }
 }

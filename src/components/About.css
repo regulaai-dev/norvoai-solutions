@@ -35,9 +35,17 @@
 }
 
 @media (max-width: 639px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about__body-wrap {
+    margin-bottom: 2rem;
+  }
+
   .about__footer {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .about__body {

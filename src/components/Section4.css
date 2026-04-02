@@ -191,8 +191,13 @@
 }
 
 @media (max-width: 639px) {
+  .s4 {
+    padding: 2.5rem 1rem 3rem;
+  }
+
   .s4__heading {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .s4__bottom-row {
@@ -201,6 +206,12 @@
   }
 
   .s4__glass-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .s4__glass-btn-content {
+    justify-content: center;
     width: 100%;
   }
 }
