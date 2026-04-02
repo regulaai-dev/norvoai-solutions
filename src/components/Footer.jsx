@@ -39,15 +39,6 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer__social-row">
-          <div className="footer__social">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">X</a>
-          </div>
-        </div>
-
         <div className="footer__bottom">
           <span className="footer__copyright">
             © 2026. NorvoAI Solutions. Toate drepturile rezervate.
